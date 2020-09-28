@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.container-fluid {
+  overflow-x: hidden !important;
+}
+.container-fluid .row {
+  overflow-x: hidden !important;
+}
+.navbandastyle {
+  font-family: "Lato", sans-serif;
+  color: #234c85;
+  font-size: 30px;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.9);
+  clear: both;
+  display: block;
+  height: 93px;
+  position: fixed !important;
+  top: 0;
+  z-index: 998;
+  padding: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.featured-image {
+  background: url("/static/images/bg_h1.jpg") no-repeat 50% 50% !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: no-repeat 50% 50% fixed;
+  width: 100%;
+}
+.navbar-light .navbar-brand {
+  color: #234c85;
+}
+
+.navlia {
+  border: none;
+  color: #00397b !important;
+  font-size: 14px;
+  line-height: 37px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  position: relative;
+  background: none !important;
+  padding-left: 42px !important;
+  letter-spacing: -2px;
+}
+
+.navFadeInDown {
+  -webkit-animation-name: fadeInDown;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40%;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: " ";
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 74%;
+}
+.btn-readmore {
+  color: #194a85 !important;
+  background: #fff;
+  border-color: #007095;
+  transition: 500ms;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 46px;
+  padding: 0 16px;
+  font-family: "Lato", sans-serif;
+}
+.btn-readmore:hover {
+  background-color: #00428a;
+  color: white !important;
+}
