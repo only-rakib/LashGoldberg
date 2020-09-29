@@ -7,6 +7,12 @@
     height: 107%;
   }
 }
+@media only screen and (min-width: 1281px) {
+  .print
+  {
+    display: block !important;
+  }
+}
 @media only screen and (max-width: 1040px) {
   .navlia {
     padding-left: 0px !important;
@@ -55,6 +61,18 @@
   .navbandastyle
   {
     padding-left: 15px;
+  }
+  .banner-image h2{
+    font-size: 40px;
+  }
+  .banner-image
+  {
+    margin-top: 93px;
+    height: 25vh;
+  }
+  .banner-image:before {
+    margin-top: 93px;
+    height: 25vh;
   }
 }
 @media only screen and (min-width: 768px) {
