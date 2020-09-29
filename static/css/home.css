@@ -213,12 +213,12 @@ a.print:focus {
     font-weight: 900;
     font-style: normal;
 }
-.law_firm_description h2
-{
+
+.law_firm_description h2 {
     font-size: 22px;
-line-height: 40px;
-color: #00397b;
-font-weight: 900;
+    line-height: 40px;
+    color: #00397b;
+    font-weight: 900;
 }
 
 .law_firm_description p {
@@ -230,13 +230,14 @@ font-weight: 900;
     margin-bottom: 1.25rem;
     text-rendering: optimizeLegibility;
 }
-.law_firm_description ul li
-{
+
+.law_firm_description ul li {
     font-size: 16px;
     list-style-position: outside;
     list-style-type: ">";
     padding: 10px;
 }
+
 /* Footer
 ------------------------------------------------------------------------------*/
 
