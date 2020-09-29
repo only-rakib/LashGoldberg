@@ -25,6 +25,19 @@ h3 {
 	color: #00397b;
 	font-weight: bold;
 }
+a {
+	text-decoration: none;
+	color: #234c85;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+a:hover,
+a:focus {
+	color: #4d7fb6;
+	text-decoration: underline;
+}
 .container-fluid {
     overflow-x: hidden !important;
 }
@@ -32,7 +45,7 @@ h3 {
 .container-fluid .row {
     overflow-x: hidden !important;
 }
-
+/*Nav bar*/
 .navbandastyle {
     font-family: "Lato", sans-serif;
     color: #234c85;
@@ -43,14 +56,6 @@ nav {
     background: rgba(255, 255, 255, 0.9);
     height: 93px;
 }
-
-.featured-image {
-    background: url("/static/images/bg_h1.jpg") no-repeat 50% 50% fixed;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center;
-}
-
 .navbar-light .navbar-brand {
     color: #234c85;
 }
@@ -67,7 +72,7 @@ nav {
     padding-left: 42px !important;
     /*letter-spacing: -1px;*/
 }
-
+/*Home Page*/
 .img-overlay {
     position: absolute;
     top: 0;
@@ -108,6 +113,13 @@ nav {
 p {
     color: #00397b;
 }
+.featured-image {
+    background: url("/static/images/bg_h1.jpg") no-repeat 50% 50% fixed;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+
 .banner-image2
 {
     background: url("/static/images/bg_h2.jpg") no-repeat 50% 50% fixed;
@@ -128,4 +140,71 @@ p {
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
+}
+.learn-more p a {
+    color: #00a4d3;
+    font-weight: 900;
+}
+/* Footer
+------------------------------------------------------------------------------*/
+
+#footer {
+	clear: both;
+	text-align: center;
+	padding: 47px 0;
+	margin-top: 0;
+}
+
+#footer ul,
+#footer li {
+	display: inline-block;
+	margin: 0;
+	list-style: none;
+	color: #ffffff;
+	font-size: 13px;
+	padding: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#footer li + li:before {
+	padding: 0 13px;
+	content: "|";
+}
+
+#footer ul {
+	display: block;
+	padding: 15px;
+	background: url("/static/images/bg_footer.png") no-repeat 50% 0;
+}
+
+#footer li a {
+	color: #ffffff;
+}
+#footer li a:hover,
+#footer li a:focus {
+	color: #C3C3C3;
+}
+
+
+#footer p {
+	color: #7d7d7d;
+	font-size: 12px;
+	padding-bottom: 28px;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 14px;
+}
+#footer p a:hover,
+#footer p a:focus {
+	color:#ffffff;
+}
+
+#footer span {
+	padding: 0 10px;
+}
+
+#footer p a {
+	color: #7d7d7d;
 }
