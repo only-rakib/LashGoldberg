@@ -1,4 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");*/
+body {
+    font: 20px/30px "Lato", sans-serif;
+    color: #626e7d;
+    background: #000000;
+    -webkit-text-size-adjust: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", sans-serif;
+}
+
+h2 {
+	font-size: 22px;
+	line-height: 40px;
+	color: #00397b;
+	font-weight: 900;
+}
+h3 {
+	font-size: 20px;
+	color: #00397b;
+	font-weight: bold;
+}
 .container-fluid {
     overflow-x: hidden !important;
 }
@@ -15,31 +41,14 @@
 
 nav {
     background: rgba(255, 255, 255, 0.9);
-    /*clear: both;
-    display: block*/;
     height: 93px;
-    /*position: fixed !important;
-    top: 0;
-    z-index: 998;
-    padding: 0;
-    left: 0;
-    right: 0;
-    margin: 0;*/
 }
 
 .featured-image {
-    background: url("/static/images/bg_h1.jpg") no-repeat 50% 50% fixed;;
-    /*position: absolute;	
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-	width: 100%;
-	-webkit-background-size: cover;
-	background-attachment: scroll;*/
-	background-size:cover;
-  	background-position:center;
-	
+    background: url("/static/images/bg_h1.jpg") no-repeat 50% 50% fixed;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
 }
 
 .navbar-light .navbar-brand {
@@ -56,7 +65,7 @@ nav {
     position: relative;
     background: none !important;
     padding-left: 42px !important;
-    letter-spacing: -2px;
+    /*letter-spacing: -1px;*/
 }
 
 .img-overlay {
@@ -93,5 +102,30 @@ nav {
 }
 
 .btn-down {
-    left:50%;
+    left: 50%;
+}
+
+p {
+    color: #00397b;
+}
+.banner-image2
+{
+    background: url("/static/images/bg_h2.jpg") no-repeat 50% 50% fixed;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+.banner-image3
+{
+    background: url("/static/images/bg_h3.jpg") no-repeat 50% 50% fixed;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+.banner-image4
+{
+    background: url("/static/images/bg_h5.jpg") no-repeat 50% 50% fixed;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
 }

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{%static 'css/all.css'%}" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="{%static 'css/animate-min.css'%}"
     />
     <script src="{%static 'bootstrap/js/jqureyslim.js'%}"></script>
     <script src="{%static 'bootstrap/js/bootstrap.min.js'%}"></script>
@@ -31,7 +31,9 @@
       class="navbar navbar-expand-md navbar-light fixed-top animate__animated animate__fadeInDown nav-fluid"
     >
       <div class="container-fluid">
-        <a class="navbar-brand navbandastyle" href="#"> Lash Goldberg </a>
+        <a class="navbar-brand navbandastyle" href="#"> 
+          <img src="{% static 'images/logo.png' %}" alt="">
+        </a>
         <button
           class="navbar-toggler"
           type="button"
