@@ -1,0 +1,69 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Miami Commercial Litigation Attorneys | Lash Goldberg</title>
+{% endblock title %} {% block container %}
+
+<div class="container-fluid p-0">
+
+    <div class="offices">
+        <div class="row" style="margin: 2.5rem 0px;">
+            <div class="col">
+                <h2 class="text-uppercase">Where We Are</h2>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-4 col-sm-12 my-3">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/miami.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <a href="#">
+                            <h2>Miami</h2>
+                        </a>
+                        <p>
+                            Miami Tower<br> 100 Southeast 2nd Street, Suite 1200<br> Miami, FL 33131-2158<br> Phone: (305) 347-4040<br> Fax: (305) 347-4050<br>
+                        </p>
+                        <a href="#"><h3 style="line-height: 30px;">View Map ></h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 my-3">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/lauderdale.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <a href="#">
+                            <h2>Fort Lauderdale</h2>
+                        </a>
+                        <p>
+                            Weston Corporate Centre I<br> 2500 Weston Road, Suite 220<br> Fort Lauderdale, FL 33331<br> Phone: (954) 384-2500<br> Fax: (954) 384-2510<br>
+                        </p>
+                        <a href="#">
+                            <h3 style="line-height: 30px;">View Map ></h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 my-3">
+
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'images/tampa.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <a href="#">
+                            <h2>Tampa</h2>
+                        </a>
+                        <p>
+                            Parkside of One Bayshore<br> 142 West Platt Street, Suite 118<br> Tampa, FL 33606<br> Phone: (813) 868-3100<br><br>
+                        </p>
+                        
+                        <a href="#">
+                            <h3 style="line-height: 30px;">View Map ></h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{%endblock container%}

@@ -31,7 +31,7 @@
       class="navbar navbar-expand-md navbar-light fixed-top animate__animated animate__fadeInDown nav-fluid"
     >
       <div class="container-fluid">
-        <a class="navbar-brand navbandastyle" href="#"> 
+        <a class="navbar-brand navbandastyle" href="{% url 'home' %}"> 
           <img src="{% static 'images/logo.png' %}" alt="">
         </a>
         <button
@@ -55,13 +55,13 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="#"> Our Team </a>
+              <a class="nav-link text-uppercase navlia" href="{% url 'attorneys' %}"> Our Team </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="#"> What's New</a>
+              <a class="nav-link text-uppercase navlia" href="{% url 'blog' %}"> What's New</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="#">
+              <a class="nav-link text-uppercase navlia" href="{% url 'offices' %}">
                 Where We Are</a
               >
             </li>
@@ -71,39 +71,11 @@
     </nav>
 
     {% block container %} {% endblock container %}
-    <!--
-    <footer>
-      <div class="container">
-        <div class="row" style="padding-top: 2rem;">
-          <div class="col " id="footerNav" aria-label="Footer Navigation">
-            <ul style="font-size: 12px;" class="text-uppercase d-flex justify-content-center">
-              <li>© 2014–2020 Lash & Goldberg LLP. All rights reserved.</li>
-    
-              <li class="sep"></li>
-    
-              <li><a href="#">Sitemap</a></li>
-    
-              <li class="sep"></li>
-    
-              <li><a href="#">Disclaimer</a></li>
-              <li class="sep"></li>
-              <li><a href="#">A PaperStreet Web Design</a></li>
-            </ul>
-          </div>
-          
-        </div>
-        <section class="content" aria-label="The Fine Print">
-          <span class="copyright">© 2020 Grossman LLP. All Rights Reserved.</span>
-    
-          <p class="smallTxt">Attorney Advertising.</p>
-        </section>
-      </div>
-    </footer>
-  -->
+
   <footer id="footer">
     <div class="container">
       <p>&copy; 2014&ndash;2020 Lash &amp; Goldberg LLP. All rights reserved.<span>|</span> <a
-          href="/sitemap/">Sitemap</a> <span>|</span> <a href="/disclaimer/">Disclaimer</a> <span>|</span> <a
+          href="{% url 'sitemap' %}">Sitemap</a> <span>|</span> <a href="{% url 'disclaimer' %}">Disclaimer</a> <span>|</span> <a
           href="https://www.paperstreet.com" target="_blank">A PaperStreet Web Design</a></p>
       <ul>
         <li><a href="/offices/miami/">Miami</a></li>

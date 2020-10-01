@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Fort Lauderdale Litigation Attorneys | Lash Goldberg</title>
+{% endblock title %} {% block container %}
+<div class="container-fluid p-0">
+    <div class="row banner-image">
+        <div
+            class="col text-center animate__animated animate__fadeIn animate__delay-1s d-flex justify-content-center align-items-center">
+            <h2 style="color: #ffff;font-weight: 300;">
+                Our Business is Understanding <strong>Yours</strong>
+            </h2>
+        </div>
+    </div>
+    <section class="law_firm_description">
+        <div class="row">
+            <div class="col">
+                <a href="#" onclick="window.print()" class="print" style="display: none;">PRINT THIS PAGE</a>
+                <h1 style="padding-top: 1rem;padding-bottom: 1rem;">Site Map</h1>
+                
+                <ul>
+                    <li style="list-style-type:disc;padding:0px">
+                        <a href="{% url 'law_firm' %}">Who We Are</a>
+                    </li>
+                    <li style="list-style-type:disc;padding:0px">
+                        <a href="{% url 'practices' %}">What We Do</a>
+                    </li>
+                    <li style="list-style-type:disc;padding:0px">
+                        <a href="{% url 'attorneys' %}">Our Team</a>
+                    </li>
+                    <li style="list-style-type:disc;padding:0px">
+                        <a href="{% url 'blog' %}">What's New</a>
+                    </li>
+                    <li style="list-style-type:disc;padding:0px">
+                        <a href="{% url 'offices' %}">Where We Are</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+</div>
+{% endblock container %}

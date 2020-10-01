@@ -51,6 +51,23 @@ a:focus {
     overflow-x: hidden !important;
 }
 
+.btnr {
+    color: #194a85;
+    background: #fff;
+    border-color: #007095;
+    transition: 500ms;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 46px;
+    padding: 0 16px;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+}
+
+.btnr:hover {
+    text-decoration: none;
+}
+
 /*Nav bar*/
 
 .navbandastyle {
@@ -186,7 +203,8 @@ a.print {
     border: 1px solid #a0a7b1;
     font-size: 11px;
     color: #626e7d;
-    margin: 62px 0 -50px;
+    /*margin: 62px 0 -50px;*/
+    margin: 1.5rem 0px;
     line-height: 23px;
     padding: 0 10px;
     text-transform: uppercase;
@@ -237,6 +255,234 @@ a.print:focus {
     list-style-type: ">";
     padding: 10px;
 }
+
+/*Practice *************************************************************************/
+
+.practiceArea {
+    padding-bottom: 3rem;
+}
+
+.practiceArea a {
+    color: #234b85;
+    width: 100%;
+    padding: 0 25px;
+    text-align: center;
+    background: #fff;
+    display: table;
+    height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+.practiceArea a:hover {
+    text-decoration: none;
+    background: #234b85;
+    color: #ffff;
+}
+
+.banner-image5 {
+    background-image: url("/static/images/bg_case.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-image5 .card-img-top {
+    max-height: 135px;
+}
+
+.banner-image5 h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.banner-image5 .card {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.banner-image5 .card-header {
+    border: none;
+    color: white;
+    padding: 0px 0px;
+}
+
+.banner-image5 .card-header a {
+    color: #ffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.banner-image5 .card-header a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #98B1CE;
+}
+
+.banner-image5 .card .card-body {
+    color: white;
+    padding: 1rem 0px;
+}
+
+.banner-image5 .card .card-body .card-text {
+    color: white;
+}
+
+.banner-image5 a.btnr:hover {
+    text-decoration: none;
+    background-color: #98B1CE;
+    ;
+}
+
+.pactice_contact {
+    padding: 8rem 0px;
+    background: #fff;
+}
+
+.pactice_contact h1 {
+    font-weight: 300;
+    color: #234b85;
+}
+
+.pactice_contact .btnr {
+    color: #fff;
+    background: #194a85;
+    transition: 500ms;
+}
+
+.pactice_contact .btnr:hover {
+    background: #8CA8C9;
+}
+
+/*Attorneys************************************************************************/
+
+.our_team {
+    background: #EEF2F7;
+    padding: 93px 40px 3rem 40px;
+}
+
+.our_team a {
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.our_team a:hover .card-body {
+    text-decoration: none;
+    background-color: rgba(35, 76, 133, .9);
+    color: #fff;
+}
+
+.our_team .card .card-body {
+    position: absolute;
+    bottom: 0;
+    color: #00397b;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .65);
+    padding: 0px 0px;
+    padding: 21px 15px 28px;
+    transition: all .5s ease;
+}
+
+.our_team .card .card-body h2 {
+    font-weight: 700;
+    font-size: 21px;
+    margin: 0 0 -1px;
+    line-height: normal;
+    padding: 0;
+    transition: all .5s ease;
+    color: inherit;
+}
+
+.our_team .card .card-body i {
+    line-height: normal;
+    font-size: 16px;
+    display: block;
+    letter-spacing: .5px;
+    transition: all .5s ease;
+    font-style: italic;
+}
+
+/*Offices********************************************************************/
+
+.offices {
+    background: #EEF2F7;
+    padding: 93px 40px 3rem 40px;
+}
+
+.offices .card {
+    border: none;
+}
+
+.offices .card .card-body {
+    background: #EEF2F7;
+    padding: 1rem 0px;
+}
+
+.offices .card .card-body h2 {
+    color: #00397b;
+    font-size: 20px;
+    margin: 22px 0 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.offices .card .card-body p {
+    color: #626e7d;
+    font-size: 20px;
+    margin: 0 0 30px;
+    ;
+    line-height: 30px;
+}
+
+/*Blog*************************************************************************/
+
+#sidebar form {
+	height: 50px;
+	background: #fff;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+#sidebar form button .fa {
+	padding-left: 4px;
+}
+
+#sidebar form button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+    text-align: center;
+    border-color: #007095;
+    transition: background-color 300ms ease-out;
+    background: #8ca8c9;
+    border-style: solid;
+    border-width: 0;
+}
+#sidebar form button:hover {
+    background: #234C85;
+}
+#sidebar form input {
+	width: 100%;
+	display: block;
+	letter-spacing: -.3px;
+	border: 0;
+	color: #a2b3c7;
+	font-size: 18px;
+	font-style: italic;
+	background: none;
+    padding: 11px 120px 0 18px;
+   
+}
+
+
 
 /* Footer
 ------------------------------------------------------------------------------*/
