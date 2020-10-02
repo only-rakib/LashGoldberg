@@ -287,6 +287,12 @@ a.print:focus {
     background-size: cover;
     background-position: center;
 }
+.banner-image6 {
+    background-image: url("/static/images/bg_news.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
 
 .banner-image5 .card-img-top {
     max-height: 135px;
@@ -440,25 +446,25 @@ a.print:focus {
 /*Blog*************************************************************************/
 
 #sidebar form {
-	height: 50px;
-	background: #fff;
-	margin-bottom: 50px;
-	position: relative;
+    height: 50px;
+    background: #fff;
+    margin-bottom: 50px;
+    position: relative;
 }
 
 #sidebar form button .fa {
-	padding-left: 4px;
+    padding-left: 4px;
 }
 
 #sidebar form button {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100px;
-	font-size: 18px;
-	height: 50px;
-	line-height: 50px;
-	padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
     text-align: center;
     border-color: #007095;
     transition: background-color 300ms ease-out;
@@ -466,23 +472,103 @@ a.print:focus {
     border-style: solid;
     border-width: 0;
 }
+
 #sidebar form button:hover {
     background: #234C85;
 }
+
 #sidebar form input {
-	width: 100%;
-	display: block;
-	letter-spacing: -.3px;
-	border: 0;
-	color: #a2b3c7;
-	font-size: 18px;
-	font-style: italic;
-	background: none;
+    width: 100%;
+    display: block;
+    letter-spacing: -.3px;
+    border: 0;
+    color: #a2b3c7;
+    font-size: 18px;
+    font-style: italic;
+    background: none;
     padding: 11px 120px 0 18px;
-   
 }
 
+#sidebar .btnr {
+    background: #8ca8c9;
+    padding: 10px 23px;
+    height: 53px;
+    line-height: 53px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    border-color: #007095;
+    transition: background-color 300ms ease-out;
+}
 
+#sidebar .btnr:hover {
+    background: #007095;
+    text-decoration: none;
+    border-color: #007095;
+}
+
+.text-a {
+    color: #626e7d;
+    font-size: 18px;
+}
+
+#sidebar .card {
+    border: none;
+    padding: 0px;
+}
+
+#sidebar .card-header {
+    border: none;
+    background-color: initial;
+    padding: 0px;
+}
+
+#sidebar .card .card-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Inside Practice areas********************************************************/
+
+.practice-areas ul li {
+    background-color: #fff;
+    list-style: none;
+    padding: 0px;
+    margin: 1rem -40px;
+}
+
+.practice-areas ul li a {
+    text-decoration: none;
+    color: #234c85;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    display: block;
+    color: #00397b;
+    font-size: 18px;
+    padding: 14px 15px;
+}
+.practice-areas ul li a:hover
+{
+    text-decoration: none;
+    background-color: #234c85;
+    color: #fff;
+}
+.practice-areas ul li a::before {
+    margin-right: 10px;
+    content: "\f105";
+    padding-left: 1px;
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font: normal normal normal 17px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* Footer
 ------------------------------------------------------------------------------*/

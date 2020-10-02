@@ -17,3 +17,5 @@ def sitemap_view(request):
     return render(request, 'sitemap.html')
 def blog_view(request):
     return render(request, 'blog.html')
+def inside_practice_view(request):
+    return render(request, 'inside_practice.html')
