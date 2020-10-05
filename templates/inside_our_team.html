@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Miami Complex Business Litigation Lawyer | Lash Goldberg</title>
+{% endblock title %} {% block container %}
+<div class="container-fluid p-0">
+    <section style="background: #EEF1F6;padding-top:93px;">
+        <div style="background-image:url({% static 'images/alan-lash-lg.jpg' %});height:934.399px;background-attachment: scroll;background-size: cover;background-position: center;">
+            <div class="tab">
+                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Main
+                    Bio<i class="fa fa-caret-down"></i></button>
+                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openCity(event, 'Paris')">Education / Admissions<i
+                        class="fa fa-caret-down"></i></button>
+                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openCity(event, 'Tokyo')">Honors / Accreditations<i
+                        class="fa fa-caret-down"></i></button>
+                <button class="tablinks" onclick="openCity(event, 'tab-4')">Representative Cases<i
+                        class="fa fa-caret-down"></i></button>
+            </div>
+            
+            <div class="tabs_container">
+                <div id="London" class="tabcontent">
+                    <h3>London</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+            
+                <div id="Paris" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+            
+                <div id="Tokyo" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="tab-4" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+    </section>
+</div>
+{%endblock container%}

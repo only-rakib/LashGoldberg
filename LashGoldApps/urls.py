@@ -10,5 +10,6 @@ urlpatterns = [
     path('sitemap/', views.sitemap_view, name='sitemap'),
     path('blog/', views.blog_view, name='blog'),
     path('inside_practice/', views.inside_practice_view, name='inside_practice'),
+    path('inside_team/', views.inside_our_team_view, name='inside_team'),
 
 ]

@@ -287,6 +287,7 @@ a.print:focus {
     background-size: cover;
     background-position: center;
 }
+
 .banner-image6 {
     background-image: url("/static/images/bg_news.jpg");
     background-attachment: scroll;
@@ -549,12 +550,13 @@ a.print:focus {
     font-size: 18px;
     padding: 14px 15px;
 }
-.practice-areas ul li a:hover
-{
+
+.practice-areas ul li a:hover {
     text-decoration: none;
     background-color: #234c85;
     color: #fff;
 }
+
 .practice-areas ul li a::before {
     margin-right: 10px;
     content: "\f105";
@@ -568,6 +570,60 @@ a.print:focus {
     -webkit-font-smoothing: antialiased;
     font-size: 17px;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/*Inside Our team***************************************************************/
+
+.tab {
+    overflow: hidden;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    max-width: 589px;
+}
+.tabs_container{
+    margin-left: 2rem;
+}
+/* Style the buttons inside the tab */
+
+.tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s ease;
+    height: 50px;
+    font-size: 15px;
+    line-height: 15px;
+    color: #474747;
+    padding: 0;
+    background: #d9dfe8;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 9px 8px;
+    width: 24%;
+    
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #474747;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #fff;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: #fff;
+    border-top: none;
+    max-width: 589px;
 }
 
 /* Footer

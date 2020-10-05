@@ -19,3 +19,5 @@ def blog_view(request):
     return render(request, 'blog.html')
 def inside_practice_view(request):
     return render(request, 'inside_practice.html')
+def inside_our_team_view(request):
+    return render(request, 'inside_our_team.html')
