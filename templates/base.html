@@ -21,8 +21,10 @@
       rel="stylesheet"
       href="{%static 'css/animate-min.css'%}"
     />
+   
     <script src="{%static 'bootstrap/js/jqureyslim.js'%}"></script>
     <script src="{%static 'bootstrap/js/bootstrap.min.js'%}"></script>
+   
     {% block title %} {% endblock title %}
   </head>
 
@@ -48,20 +50,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="{% url 'law_firm' %}">Who We are</a>
+              <a class="nav-link text-uppercase" href="{% url 'law_firm' %}">Who We are</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="{% url 'practices' %}">What We Do </a>
+              <a class="nav-link text-uppercase" href="{% url 'practices' %}">What We Do </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="{% url 'attorneys' %}"> Our Team </a>
+              <a class="nav-link text-uppercase" href="{% url 'attorneys' %}"> Our Team </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="{% url 'blog' %}"> What's New</a>
+              <a class="nav-link text-uppercase" href="{% url 'blog' %}"> What's New</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase navlia" href="{% url 'offices' %}">
+              <a class="nav-link text-uppercase" href="{% url 'offices' %}">
                 Where We Are</a
               >
             </li>

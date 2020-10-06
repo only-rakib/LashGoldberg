@@ -85,9 +85,9 @@ nav {
     color: #234c85;
 }
 
-.navlia {
+/*.navlia {
     border: none;
-    color: #00397b !important;
+    color: #00397b;
     font-size: 14px;
     line-height: 37px;
     font-family: "Lato", sans-serif;
@@ -95,7 +95,59 @@ nav {
     position: relative;
     background: none !important;
     padding-left: 42px !important;
-    /*letter-spacing: -1px;*/
+    
+}*/
+
+@keyframes nav-link-animation {}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #00397b;
+    border: none;
+    font-size: 14px;
+    line-height: 37px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    position: relative;
+    background: none !important;
+    padding-left: 42px !important;
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+    /*background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;*/
+    opacity: 0;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: #8baac9;
+	/*position: absolute;*/
+	top: 100%;
+	left: 0;
+	display: block;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #9bb4cd;
+}
+.navbar-light .navbar-nav .nav-link:hover:after{
+    /*color: #9bb4cd;*/
+    width: 100%;
+    left: 0;
+    transform: translateY(-10px);
+	opacity: 1;
 }
 
 /*Home Page*/
@@ -574,15 +626,73 @@ a.print:focus {
 
 /*Inside Our team***************************************************************/
 
+.show-lg {
+    background: #EEF1F6;
+    padding-top: 93px;
+}
+
+.show-mobile {
+    display: none;
+    padding-top: 93px;
+}
+
+#accordion .card .card-header .expander:after {
+    font-family: Fontawesome;
+    content: '\f077';
+    float: right;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+#accordion .card .card-header .expander.collapsed:after {
+    font-family: Fontawesome;
+    content: '\f078';
+}
+
+.slider {
+    background: #fff;
+    padding: 1% 2%;
+    display: none;
+}
+
+.expander {
+    background: #d9dfe8;
+    color: #222222;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    width: 100%;
+    transition: all .5s ease;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.expander:hover {
+    background: #fff;
+    color: #000;
+}
+
+#accordion .card {
+    border: none;
+    border-radius: 0;
+}
+
+#accordion .card .card-header {
+    border: none;
+    border-radius: 0;
+    padding: 0px;
+}
+
 .tab {
     overflow: hidden;
     padding-top: 2rem;
     margin-left: 2rem;
     max-width: 589px;
 }
-.tabs_container{
+
+.tabs_container {
     margin-left: 2rem;
 }
+
 /* Style the buttons inside the tab */
 
 .tab button {
@@ -601,7 +711,6 @@ a.print:focus {
     text-decoration: none;
     padding: 10px 9px 8px;
     width: 24%;
-    
 }
 
 /* Change background color of buttons on hover */
@@ -620,10 +729,127 @@ a.print:focus {
 
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    background-color: #fff;
+    padding: 25px 12px;
+    background-color: rgba(255, 255, 255, .9);
     border-top: none;
     max-width: 589px;
+    max-height: 812px;
+    overflow-y: scroll;
+}
+
+a.btn-back {
+    float: right;
+    border: 1px solid #a0a7b1;
+    font-size: 11px;
+    color: #626e7d;
+    margin: 4px 0 -32px;
+    line-height: 23px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+a.btn-back:hover,
+a.btn-back:focus {
+    text-decoration: none;
+    background: #00397b;
+    border-color: #00397b;
+    color: #fff;
+}
+
+.tab-attorney-title {
+    color: #00397b;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 13px;
+    font-size: 20px;
+    line-height: normal;
+    margin: 0;
+}
+
+.tab-attorney-name {
+    color: #00397b;
+    font-size: 24px;
+    line-height: normal;
+    padding: 0 !important;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: -1px 0;
+}
+
+.contact {
+    padding-bottom: 22px;
+}
+
+.contact p {
+    color: #00397b;
+    font-size: 20px;
+    padding: 10px 0 7px;
+    margin: 0;
+    line-height: normal;
+}
+
+a.button.light {
+    font-size: 16px;
+    color: #fff;
+    background: #00397b;
+    padding: 0 10px;
+    line-height: 32px;
+    display: block;
+    width: 196px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+a.button.light:hover,
+.button.light:focus {
+    background: #234c85;
+    text-decoration: none;
+}
+
+.entry {
+    margin-bottom: 5px;
+}
+
+.entry p {
+    margin: 0 0 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #626e7d;
+}
+
+.tabs_container h2:not(.tab-attorney-name) {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00397b;
+}
+
+.entry ul li:before,
+.bio #panel2 ul li:before,
+.bio #panel3 ul li:before,
+.bio #panel4 ul li:before,
+.ul0 li:before {
+    margin-right: 11px;
+    content: "\f105";
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    font: normal normal normal 17px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+    -moz-osx-font-smoothing: grayscale;
+    list-style-type: none;
+}
+
+.entry ul li {
+    color: #626e7d;
+    font-size: 16px;
+    margin: 0;
+    list-style: none;
+    padding: 0 0 6px 20px;
+    /* Fix for text on second line */
+    text-indent: -11px;
+    margin-left: 23px;
 }
 
 /* Footer

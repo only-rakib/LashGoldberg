@@ -1,91 +1,101 @@
 @media only screen and (max-width: 1281px) {
-  .img-top-first-md,
-  .img-top-first-sm {
-    margin-top: 93px;
-  }
-  .img-overlay {
-    height: 107%;
-  }
+    .img-top-first-md,
+    .img-top-first-sm {
+        margin-top: 93px;
+    }
+    .img-overlay {
+        height: 107%;
+    }
 }
+
 @media only screen and (min-width: 1281px) {
-  .print
-  {
-    display: block !important;
-  }
+    .print {
+        display: block !important;
+    }
 }
+
 @media only screen and (max-width: 1040px) {
-  .navlia {
-    padding-left: 0px !important;
-  }
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 0px !important;
+    }
 }
+
+@media only screen and (max-width: 958px) {
+    .show-lg {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 840px) {
-  .navlia {
-    font-size: 13px;
-    letter-spacing: -1px;
-  }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 13px;
+        letter-spacing: -1px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-  nav {
-    background: #ffff !important;
-  }
-  h2{
-    font-size: 30px;
-  }
-  .img-top-first-md {
-    display: none;
-  }
-  .img-top-first-sm {
-    display: block;
-  }
-  .btn-readmore {
-    padding: 0 5px !important;
-    line-height: 20px;
-    font-size: 15px;
-  }
-  .img-overlay {
-    height: 115% !important;
-  }
-  #navbarSupportedContent {
-    background-color: #ffff;
-    width: 100%;
-    padding-left: 5px;
-  }
-  .nav-fluid {
-    padding: 0px !important;
-  }
-  .navlia {
-    font-size: 13px;
-    letter-spacing: 0px;
-  }
-  .navbandastyle
-  {
-    padding-left: 15px;
-  }
-  .banner-image h2{
-    font-size: 40px;
-  }
-  .banner-image
-  {
-    margin-top: 93px;
-    height: 25vh;
-  }
-  .banner-image:before {
-    margin-top: 93px;
-    height: 25vh;
-  }
-  .pactice_contact
-  {
-    padding: 4rem 0px;
-  }
+    nav {
+        background: #ffff !important;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .img-top-first-md {
+        display: none;
+    }
+    .img-top-first-sm {
+        display: block;
+    }
+    .btn-readmore {
+        padding: 0 5px !important;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .img-overlay {
+        height: 115% !important;
+    }
+    #navbarSupportedContent {
+        background-color: #ffff;
+        width: 100%;
+        padding-left: 5px;
+    }
+    .nav-fluid {
+        padding: 0px !important;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 13px;
+        letter-spacing: 0px;
+    }
+    .navbandastyle {
+        padding-left: 15px;
+    }
+    .banner-image h2 {
+        font-size: 40px;
+    }
+    .banner-image {
+        margin-top: 93px;
+        height: 25vh;
+    }
+    .banner-image:before {
+        margin-top: 93px;
+        height: 25vh;
+    }
+    .pactice_contact {
+        padding: 4rem 0px;
+    }
+    .navbar-light .navbar-nav .nav-link:after {
+        display: none;
+    }
 }
+
 @media only screen and (min-width: 768px) {
-  .img-top-first-md {
-    display: block;
-  }
-  .img-top-first-sm {
-    display: none;
-  }
+    .img-top-first-md {
+        display: block;
+    }
+    .img-top-first-sm {
+        display: none;
+    }
 }
-
-

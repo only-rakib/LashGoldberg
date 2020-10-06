@@ -1,44 +1,156 @@
 {% extends 'base.html' %} {% load static %} {% block title %}
+<!--
+<script src="{% static 'js/slider.js' %}"></script>
+-->
 <title>Miami Complex Business Litigation Lawyer | Lash Goldberg</title>
 {% endblock title %} {% block container %}
 <div class="container-fluid p-0">
-    <section style="background: #EEF1F6;padding-top:93px;">
+    <section class="show-lg">
         <div style="background-image:url({% static 'images/alan-lash-lg.jpg' %});height:934.399px;background-attachment: scroll;background-size: cover;background-position: center;">
             <div class="tab">
-                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Main
+                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openTab(event, 'main-bio')" id="defaultOpen">Main
                     Bio<i class="fa fa-caret-down"></i></button>
-                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openCity(event, 'Paris')">Education / Admissions<i
+                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openTab(event, 'education')">Education / Admissions<i
                         class="fa fa-caret-down"></i></button>
-                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openCity(event, 'Tokyo')">Honors / Accreditations<i
+                <button style="margin-right: 0.46rem;" class="tablinks" onclick="openTab(event, 'honors')">Honors / Accreditations<i
                         class="fa fa-caret-down"></i></button>
-                <button class="tablinks" onclick="openCity(event, 'tab-4')">Representative Cases<i
+                <button class="tablinks" onclick="openTab(event, 'representative')">Representative Cases<i
                         class="fa fa-caret-down"></i></button>
             </div>
-            
+
             <div class="tabs_container">
-                <div id="London" class="tabcontent">
-                    <h3>London</h3>
-                    <p>London is the capital city of England.</p>
+                <div id="main-bio" class="tabcontent">
+                    <div style="position: relative; top: 0px; left: 0px;" dir="ltr">
+                        <a href="/attorneys/" class="btn-back"><i class="fa fa-caret-left"></i> BACK TO OUR TEAM</a>
+                        <h1 class="tab-attorney-name">Alan D. Lash</h1>
+                        <h2 class="tab-attorney-title">Partner</h2>
+                        <div class="contact">
+                            <p class="contact-details">
+                                Phone: 305-347-4040<br> Fax: 305-347-4050<br> Email: <a href="mailto:alash@lashgoldberg.com">alash@lashgoldberg.com</a>
+                            </p>
+                            <p>
+                                <a href="/pdf/generate.php?name=alan-d-lash&amp;type=attorney" class="button light">Download PDF Version</a>
+                                <a href="/vcard/vcard.php?name_first=Alan D.&amp;name_last=Lash" class="button light">Download V-Card</a>
+                            </p>
+                        </div>
+                        <div class="entry">
+                            <p>As a founding partner of Lash &amp; Goldberg LLP, Alan Lash brings more than 30 years of complex business litigation experience to the Firm.&nbsp; He serves regional and national clients in a variety of industries including
+                                health care, real estate, finance, aerospace and retail.&nbsp; A seasoned litigator, Alan has litigated and arbitrated cases throughout the state of Florida and the United States.&nbsp; He has appeared in court and arbitration
+                                proceedings in California, Florida, Georgia, Illinois, New Jersey, North Carolina, South Carolina and Tennessee.</p>
+                            <p>Alan has prosecuted and defended numerous high-profile cases, and has obtained several multimillion dollar arbitration awards, judgments and settlements in high stakes business disputes throughout the United States.&nbsp; He
+                                handles an array of complex cases involving diverse and complex subject matters, ranging from the defense of claims asserting violation of federal consumer protection statutes such as the Fair Debt Collection Practices
+                                Act and the Telephone Consumer Protection Act, to the prosecution and defense of shareholder disputes and derivative actions.&nbsp; Alan has defended numerous class actions, as well as securities, antitrust and False Claims
+                                Act cases, and has extensive experience litigating and arbitrating large managed care and third-party payer disputes.</p>
+                            <p><em>Chambers USA</em> 2020 ranked the firm and Alan individually for healthcare in Florida, with clients reporting him to be an “excellent trial lawyer” and lauding the firm as “my go-to firm” with a team of lawyers that are
+                                “responsive, strategically excellent [and] always know the substance very well.” Alan is consistently recognized by <em>Best Lawyers in America</em> and Martindale-Hubbell’s <em>Bar Register of
+                                    Preeminent Lawyers</em> for both commercial litigation and health law.&nbsp; In 2012, Alan was selected as “The Most Effective Lawyer” in the arbitration category by the <em>Miami Daily Business Review/American
+                                    Law Media.&nbsp; Best Lawyers&nbsp;</em>recognized him as 2019 "Lawyer of the Year" for his work in Health Care Law in Miami, an honor awarded to only a single lawyer in a specific practice area and location.&nbsp;&nbsp;
+                            </p>
+                            <p>Alan additionally serves as an arbitrator for the American Arbitration Association (AAA) and the American Health Lawyers’ Association (AHLA), and is selected by peers and industry leaders to arbitrate their complex business
+                                disputes.&nbsp; Certified by the Florida Bar as a specialist in health law, Alan serves as the Vice Chair for Educational Programs for the AHLA's Alternative Dispute Resolution Affinity Group, and is an inaugural member
+                                of the AAA's National Healthcare Dispute Resolution Advisory Council.&nbsp; He is a frequent guest lecturer, and has authored numerous articles in national publications addressing emerging and complex business litigation
+                                issues.&nbsp; Alan participates in various volunteer organizations and pro bono activities, and is a Fellow of The Florida Bar Foundation.</p>
+                            <h2>Principal Practice Areas:</h2>
+                            <ul>
+                                <li><a href="/practices/alternative-dispute-resolution/">Alternative Dispute Resolution</a></li>
+                                <li><a href="/practices/class-action-litigation/">Class Action Litigation</a></li>
+                                <li><a href="/practices/complex-business-litigation/">Complex Commercial Litigation</a></li>
+                                <li><a href="/practices/consumer-litigation-defense/">Consumer Litigation Defense</a></li>
+                                <li><a href="/practices/corporate-partnership-shareholder-disputes/">Corporate, Partnership &amp;
+                                        Shareholder Disputes</a></li>
+                                <li><a href="/practices/employment-litigation/">Employment Litigation</a></li>
+                                <li><a href="/practices/health-care-litigation/">Health Care Litigation</a></li>
+                                <li><a href="/practices/health-care-operations/">Health Care Operations</a></li>
+                                <li><a href="/practices/real-estate-litigation/">Real Estate Litigation</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            
-                <div id="Paris" class="tabcontent">
-                    <h3>Paris</h3>
-                    <p>Paris is the capital of France.</p>
+
+                <div id="education" class="tabcontent">
+                    <a href="/attorneys/" class="btn-back"><i class="fa fa-caret-left"></i> BACK TO OUR TEAM</a>
+                    <h2 class="tab-attorney-name">Alan D. Lash</h2>
+                    <h3 class="tab-attorney-title">Partner</h3>
+                    <div class="entry">
+                        <h2>Education:</h2>
+                        <ul>
+                            <li>University of Miami School of Law</li>
+                            <ul>
+                                <li>Juris Doctor</li>
+                            </ul>
+                            <li>Dickinson College</li>
+                            <ul>
+                                <li>Bachelor of Arts</li>
+                            </ul>
+                        </ul>
+                        <h2>Admissions:</h2>
+                        <ul>
+                            <li>Florida</li>
+                            <li>United States District Court for the Southern District of Florida</li>
+                            <li>United States District Court for the Middle District of Florida</li>
+                            <li>United States District Court for the Northern District of Florida</li>
+                            <li>United States Court of Appeals for the Eleventh Circuit</li>
+                        </ul>
+                    </div>
                 </div>
-            
-                <div id="Tokyo" class="tabcontent">
-                    <h3>Tokyo</h3>
-                    <p>Tokyo is the capital of Japan.</p>
+
+                <div id="honors" class="tabcontent">
+                    <a href="/attorneys/" class="btn-back"><i class="fa fa-caret-left"></i> BACK TO OUR TEAM</a>
+                    <h2 class="tab-attorney-name">Alan D. Lash</h2>
+                    <h3 class="tab-attorney-title">Partner</h3>
+                    <div class="entry">
+                        <h2>Honors / Accreditations:</h2>
+                        <ul>
+                            <li>Ranked by <em>Chambers USA</em><span><span> </span>2020 for<span> </span></span>healthcare<span><span> </span>in Florida
+                                </span>
+                            </li>
+                            <li>Selected by his peers and named <em>Best Lawyers</em> 2019 "Lawyer of the Year" for his work in Health Care Law in Miami, an honor awarded to only a single lawyer in a specific practice area and location </li>
+                            <li>Named one of South Florida’s “Most Effective Lawyers” in 2012 by the <em>Daily Business Review/American Law
+                                    Media</em></li>
+                            <li>Recognized nationally by his peers for current inclusion in <em>The Best Lawyers In America®</em> in two different categories: Commercial Litigation and Health Care Law</li>
+                            <li>Repeatedly recognized as one of the "Top Lawyers in South Florida," by <em>the South Florida Legal Guide</em>
+                            </li>
+                            <li>The law firm he co-founded has been named one of the country’s “Best Law Firms” as reported in <em>U.S. News
+                                    &amp; World Report</em> in 2013</li>
+                            <li>Listed in Martindale-Hubbell Law Directory’s <em>Bar Register of Preeminent Lawyers</em></li>
+                            <li>Included in <em>Florida Trend’s</em> “Legal Elite”, <em>Florida SuperLawyers</em>, and “South Florida’s Top Lawyers” in <em>Florida Monthly</em></li>
+                            <li>Member of the Million Dollar Advocates Forum, a prestigious group of trial lawyers who have won multi-million dollar verdicts and settlements</li>
+                            <li>Inaugural Member of the American Arbitration Association’s National Health Care Dispute Resolution Advisory Council
+                            </li>
+                            <li>Vice Chair for Educational Programs for the American Health Lawyers’ Association’s Alternative Dispute Resolution Affinity Group</li>
+                            <li>Florida Bar Certified Specialist in Health Law</li>
+                            <li>Fellow, The Florida Bar Foundation</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="tab-4" class="tabcontent">
-                    <h3>Tokyo</h3>
-                    <p>Tokyo is the capital of Japan.</p>
+                <div id="representative" class="tabcontent">
+                    <a href="/attorneys/" class="btn-back"><i class="fa fa-caret-left"></i> BACK TO OUR TEAM</a>
+                    <h2 class="tab-attorney-name">Alan D. Lash</h2>
+                    <h3 class="tab-attorney-title">Partner</h3>
+                    <div class="entry">
+                        <h2>Illustrative Recent Representations:</h2>
+                        <p>Among other notable cases, Alan has recently:</p>
+                        <ul>
+                            <li>Defended a national corporate employer in a physician’s multimillion dollar wrongful termination arbitration that was tried through final hearing, resulting in a complete defense award</li>
+                            <li>Obtained a final summary judgment on behalf of a national, publicly-traded retailer in a multimillion dollar state court breach of contract action against a commercial landlord regarding disputed contract language and lease
+                                charges
+                            </li>
+                            <li>Defended a not-for-profit hospital corporation in a federal court qui tam action brought by a former employee alleging false Medicare billings, resulting in a complete vindication and dismissal of all claims</li>
+                            <li>Obtained an 8 million dollar final arbitration award for a non-profit hospital against an affiliate of a multinational pharmaceutical conglomerate, and defeated the affiliate’s 43 million dollar counterclaim, all of which was
+                                confirmed by a federal district court</li>
+                            <li>Defended a publicly-traded Fortune 500 company in a 20 million dollar breach of contract and partnership dispute that was tried to conclusion in arbitration before a former Chief Justice of the Florida Supreme Court</li>
+                            <li>Defended a non-profit corporation before a panel of three arbitrators in a “bet-the-company,” 40 million dollar vendor contract dispute</li>
+                            <li>Obtained a multi-million dollar award against a national preferred provider organization on behalf of a multihospital health system following a two-week arbitration before a panel of three arbitrators</li>
+                            <li>Obtained a multimillion dollar award against a national health maintenance organization on behalf of a multihospital health system following a protracted arbitration, which was confirmed by a state trial court</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
 
         <script>
-            function openCity(evt, cityName) {
+            function openTab(evt, tabName) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
                 for (i = 0; i < tabcontent.length; i++) {
@@ -48,12 +160,130 @@
                 for (i = 0; i < tablinks.length; i++) {
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
-                document.getElementById(cityName).style.display = "block";
+                document.getElementById(tabName).style.display = "block";
                 evt.currentTarget.className += " active";
             }
 
             // Get the element with id="defaultOpen" and click on it
             document.getElementById("defaultOpen").click();
+        </script>
+    </section>
+    <section class="show-mobile">
+        <div class="row">
+            <div class="col">
+                <img src="{% static 'images/alan-lash-mobile.jpg' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="expander" data-toggle="collapse" data-target="#mainBio" aria-expanded="true" aria-controls="mainBio" role="button">
+                                <span>Main Bio</span>
+                            </div>
+
+                        </div>
+
+                        <div id="mainBio" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <h3>Alan D. Lash</h3>
+                                <h4>Partner</h4>
+                                <div class="contact">
+                                    <p>
+                                        Phone: 305-347-4040<br> Fax: 305-347-4050<br> Email: <a href="mailto:alash@lashgoldberg.com">alash@lashgoldberg.com</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" class="button light">Download PDF Version</a>
+                                        <a href="/vcard/vcard.php?name_first=Alan D.&amp;name_last=Lash" class="button light">Download V-Card</a>
+                                    </p>
+                                </div>
+                                <div class="entry">
+                                    <p>As a founding partner of Lash &amp; Goldberg LLP, Alan Lash brings more than 30 years of complex business litigation experience to the Firm. He serves regional and national clients in a variety of industries including
+                                        health care, real estate, finance, aerospace and retail. A seasoned litigator, Alan has litigated and arbitrated cases throughout the state of Florida and the United States. He has appeared in court and arbitration
+                                        proceedings in California, Florida, Georgia, Illinois, New Jersey, North Carolina, South Carolina and Tennessee.
+                                    </p>
+                                    <p>Alan has prosecuted and defended numerous high-profile cases, and has obtained several multimillion dollar arbitration awards, judgments and settlements in high stakes business disputes throughout the United States.
+                                        He handles an array of complex cases involving diverse and complex subject matters, ranging from the defense of claims asserting violation of federal consumer protection statutes such as the Fair Debt Collection
+                                        Practices Act and the Telephone Consumer Protection Act, to the prosecution and defense of shareholder disputes and derivative actions. Alan has defended numerous class actions, as well as securities, antitrust
+                                        and False Claims Act cases, and has extensive experience litigating and arbitrating large managed care and third-party payer disputes.
+                                    </p>
+                                    <p><em>Chambers USA</em> 2020 ranked the firm and Alan individually for healthcare in Florida, with clients reporting him to be an “excellent trial lawyer” and lauding the firm as “my go-to firm” with a team of lawyers
+                                        that are “responsive, strategically excellent [and] always know the substance very well.” Alan is consistently recognized by <em>Best Lawyers in America</em> and Martindale-Hubbell’s <em>Bar Register of Preeminent
+                                            Lawyers</em> for both commercial litigation and health law. In 2012, Alan was selected as “The Most Effective Lawyer” in the arbitration category by the <em>Miami Daily Business Review/American Law Media. Best
+                                            Lawyers </em>recognized him as 2019 "Lawyer of the Year" for his work in Health Care Law in Miami, an honor awarded to only a single lawyer in a specific practice area and location. </p>
+                                    <p>Alan additionally serves as an arbitrator for the American Arbitration Association (AAA) and the American Health Lawyers’ Association (AHLA), and is selected by peers and industry leaders to arbitrate their complex
+                                        business disputes. Certified by the Florida Bar as a specialist in health law, Alan serves as the Vice Chair for Educational Programs for the AHLA's Alternative Dispute Resolution Affinity Group, and is an inaugural
+                                        member of the AAA's National Healthcare Dispute Resolution Advisory Council. He is a frequent guest lecturer, and has authored numerous articles in national publications addressing emerging and complex business
+                                        litigation issues. Alan participates in various volunteer organizations and pro bono activities, and is a Fellow of The Florida Bar Foundation.
+                                    </p>
+                                    <h2>Principal Practice Areas:</h2>
+                                    <ul>
+                                        <li><a href="/practices/alternative-dispute-resolution/">Alternative Dispute Resolution</a></li>
+                                        <li><a href="/practices/class-action-litigation/">Class Action Litigation</a></li>
+                                        <li><a href="/practices/complex-business-litigation/">Complex Commercial Litigation</a></li>
+                                        <li><a href="/practices/consumer-litigation-defense/">Consumer Litigation Defense</a></li>
+                                        <li><a href="/practices/corporate-partnership-shareholder-disputes/">Corporate, Partnership &amp; Shareholder
+                                                Disputes</a></li>
+                                        <li><a href="/practices/employment-litigation/">Employment Litigation</a></li>
+                                        <li><a href="/practices/health-care-litigation/">Health Care Litigation</a></li>
+                                        <li><a href="/practices/health-care-operations/">Health Care Operations</a></li>
+                                        <li><a href="/practices/real-estate-litigation/">Real Estate Litigation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class="expander" data-toggle="collapse" data-target="#education" aria-expanded="false" aria-controls="education" role="button">
+                                <span>Admissions / Education</span>
+                            </div>
+                        </div>
+                        <div id="education" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="expander" data-toggle="collapse" data-target="#honors" aria-expanded="false" aria-controls="honors" role="button">
+                                <span>Honors / Accreditations</span>
+                            </div>
+                        </div>
+                        <div id="honors" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <div class="expander" data-toggle="collapse" data-target="#representative" aria-expanded="false" aria-controls="representative" role="button">
+                                <span>Representative Cases</span>
+                            </div>
+                        </div>
+                        <div id="representative" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                                beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $('.expander').addClass('collapsed');
+            $('#headingOne').find('.expander').removeClass('collapsed');
         </script>
     </section>
 </div>
