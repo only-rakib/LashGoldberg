@@ -6,6 +6,8 @@ urlpatterns = [
     path('practices/', views.practice_view, name='practices'),
     path('attorneys/', views.attorneys_view, name='attorneys'),
     path('offices/', views.offices_view, name='offices'),
+    path('offices/<str:office_title>-<int:pk>',
+         views.offices_inside_view, name='offices_inside'),
     path('disclaimer/', views.disclaimer_view, name='disclaimer'),
     path('sitemap/', views.sitemap_view, name='sitemap'),
     path('blog/', views.blog_view, name='blog'),

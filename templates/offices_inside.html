@@ -5,34 +5,24 @@
 <div class="container-fluid p-0">
 
     <div class="offices">
-        <div class="row" style="margin: 2.5rem 0px;">
-            <div class="col">
-                <h2 class="text-uppercase">Where We Are</h2>
-            </div>
-        </div>
         <div class="row">
-            
-            {% for offices in data %}
             <div class="col-md-4 col-sm-12 my-3">
                 <div class="card">
                     <img class="card-img-top" src="{{offices.cover_pic.url}}" alt="Card image cap">
                     <div class="card-body">
-                        <a href="{{offices.get_absolute_url}}">
-                            <h2>{{offices.title}}</h2>
-                        </a>
+                        
+                            <h2 style="font-weight: 900;text-transform: none;">Lash & Goldberg</h2>
+                        
                         <p>
                             {{offices.address}}<br>
                             {{offices.address2}}<br>
-                            {{offices.state}}, {{offices.zip_code}}<br> 
-                            Phone: {{offices.phone}}<br> 
+                            {{offices.state}}, {{offices.zip_code}}<br>
+                            Phone: {{offices.phone}}<br>
                             Fax: {{offices.fax}}<br>
                         </p>
-                        <a href="#"><h3 style="line-height: 30px;">View Map ></h3></a>
                     </div>
                 </div>
             </div>
-            {% endfor %}
-            
         </div>
     </div>
 </div>

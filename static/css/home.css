@@ -6,6 +6,9 @@ body {
     background: #000000;
     -webkit-text-size-adjust: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -85,20 +88,7 @@ nav {
     color: #234c85;
 }
 
-/*.navlia {
-    border: none;
-    color: #00397b;
-    font-size: 14px;
-    line-height: 37px;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    position: relative;
-    background: none !important;
-    padding-left: 42px !important;
-    
-}*/
 
-@keyframes nav-link-animation {}
 
 .navbar-light .navbar-nav .nav-link {
     color: #00397b;
@@ -113,21 +103,11 @@ nav {
 }
 
 .navbar-light .navbar-nav .nav-link:after {
-    /*background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    background: red;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;*/
     opacity: 0;
 	content: "";
 	height: 2px;
 	width: 100%;
 	background: #8baac9;
-	/*position: absolute;*/
 	top: 100%;
 	left: 0;
 	display: block;
@@ -152,7 +132,7 @@ nav {
 
 /*Home Page*/
 
-.img-overlay {
+.featured-image .img-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -161,7 +141,22 @@ nav {
     text-align: center;
 }
 
-.img-overlay:before {
+.banner-image2 .img-overlay:before {
+    content: " ";
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 74%;
+}
+.banner-image2 .img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    text-align: center;
+}
+
+.featured-image .img-overlay:before {
     content: " ";
     display: block;
     /* adjust 'height' to position overlay content vertically */
