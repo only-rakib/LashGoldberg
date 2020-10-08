@@ -23,32 +23,15 @@
                 <h1 style="text-align: center;padding-top: 1rem;padding-bottom: 1rem;">PRACTICE AREAS</h1>
             </div>
         </div>
-        <div class="row practiceArea">
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center" style="margin-top: 2rem;">
-                <a href="{% url 'inside_practice' %}" class="d-flex align-items-center justify-content-center">
-                    <span>Appellate Advocacya</span>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center" style="margin-top: 2rem;">
-                <a href="#" class="d-flex align-items-center justify-content-center">
-                    <span>Arbitration & Alternative Dispute Resolution</span>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center" style="margin-top: 2rem;">
-                <a href="#" class="d-flex align-items-center justify-content-center">
-                    <span>Appellate Advocacya</span>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center" style="margin-top: 2rem;">
-                <a href="#" class="d-flex align-items-center justify-content-center">
-                    <span>Appellate Advocacya</span>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center" style="margin-top: 2rem;">
-                <a href="#" class="d-flex align-items-center justify-content-center">
-                    <span>Appellate Advocacya</span>
-                </a>
-            </div>
+        <div class="row practiceArea">    
+            {% for i in data %}
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center" style="margin-top: 2rem;">
+                    <a href="{{i.get_absolute_url}}" class="d-flex align-items-center justify-content-center">
+                        <span>{{i.title}}</span>
+                    </a>
+                </div>
+            {% endfor %}
+
         </div>
 
     </section>

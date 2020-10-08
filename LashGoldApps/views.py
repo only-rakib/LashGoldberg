@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from . models import Office_Address
+from . models import Office_Address,PracticeArea
 
 def home_view(request):
     return render(request, 'home.html')
@@ -8,7 +8,14 @@ def law_firm_view(request):
     return render(request,'Law_firm.html')
 
 def practice_view(request):
-    return render(request,'Practices.html')
+    query_practice_area = PracticeArea.objects.all()
+    return render(request, 'Practices.html', {'data': query_practice_area})
+
+
+def practice_inside_view(request,slug):
+    query = PracticeArea.objects.get(slug=slug)
+    query_practice_area = PracticeArea.objects.all()
+    return render(request,'inside_practice.html',{'data':query,'practice_area':query_practice_area})
 
 def attorneys_view(request):
     return render(request,'Attorneys.html')

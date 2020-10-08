@@ -80,10 +80,11 @@
           href="{% url 'sitemap' %}">Sitemap</a> <span>|</span> <a href="{% url 'disclaimer' %}">Disclaimer</a> <span>|</span> <a
           href="https://www.paperstreet.com" target="_blank">A PaperStreet Web Design</a></p>
       <ul>
-        <li><a href="/offices/miami/">Miami</a></li>
-        <li><a href="/offices/fort-lauderdale/">Fort Lauderdale</a></li>
-        <li><a href="/offices/tampa/">Tampa</a></li>
-        <!-- <li><a href="/offices/tallahassee2/">Tallahassee</a></li> -->
+        
+        {% for i in context_data%}
+          <li><a href="{{i.get_absolute_url}}">{{i.title}}</a></li>
+        {% endfor %}
+        
       </ul>
     </div>
     <!-- / container -->

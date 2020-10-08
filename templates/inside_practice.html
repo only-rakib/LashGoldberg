@@ -15,47 +15,14 @@
 
                 <div class="row">
                     <div class="col">
-                        <h1 style="padding-top: 1rem;padding-bottom: 1rem;" class="text-uppercase">
-                            Arbitration & Alternative Dispute Resolution
+                        <h1 style="padding-top: 1rem;padding-bottom: 2rem;" class="text-uppercase">
+                            {{data.title}}
                         </h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p>Lash &amp; Goldberg LLP brings the same zealous advocacy skills to arbitration, mediation and other forms of alternative dispute resolution (&ldquo;ADR&rdquo;) that we apply to trials and appeals. In increasing numbers, employers,
-                            health care organizations and other businesses utilize arbitration as an alternative to traditional court litigation to resolve their disputes. Our Firm&rsquo;s depth of experience as advocates serves our clients well in these
-                            alternative dispute resolution forums. Arbitration may become as simple or as intricate as necessary to address the issues at hand, and Lash &amp; Goldberg LLP is equipped to handle any range of complexity.</p>
-                        <p>We also advise clients on the management of risk through the drafting of arbitration agreements, including the selection of the administering organization and the arbitrator, arbitration rules, choice of law, venue and jurisdiction.
-                        </p>
-                        <p>In addition to serving as experienced advocates in arbitration proceedings, Lash &amp; Goldberg LLP has a wealth of experience in mediation. Traditionally required as a precondition to trial, Lash &amp; Goldberg LLP attorneys have
-                            attended hundreds of mediations, both voluntary by agreement and court-ordered. While some may consider mediation to be a perfunctory step on the road to trial, we view mediation as a special opportunity to achieve any number
-                            of critical objectives in our clients&rsquo; best interests.</p>
-                        <p>We treat each mediation as an effective tool to obtain valuable information and key insights into an opponent&rsquo;s case, including its relative strengths and weaknesses.&nbsp; Like a finely crafted opening statement, we believe
-                            that a thoughtfully-prepared, well-organized and powerful mediation presentation can persuade even the most recalcitrant opponent to view its case in a different light and, ultimately, facilitate the resolution of the most
-                            difficult case.</p>
-                        <h2>Arbitration and ADR Experience</h2>
-                        <p>We serve clients in arbitration proceedings ranging from one-day to extended sessions stretching over many months. Like litigation, the arbitration may be high-exposure and high-stakes or small-to-medium-sized disputes. In any
-                            matter, we apply our skill and experience to fit the circumstances and address our client&rsquo;s needs.</p>
-                        <p>We prepare for mediation in much the same way as we do for an opening statement in an arbitration or a trial or a major court hearing on a case dispositive motion.&nbsp; Through detailed factual, legal and thematic preparation,
-                            accompanied by the use of power point presentations, timelines, graphs, charts and other demonstrative aids as necessary and appropriate, Lash &amp; Goldberg LLP litigators use the mediation opening statement and the mediation
-                            process as a whole as a unique opportunity to deliver a strong and carefully crafted message directly to opposing counsel and their clients.&nbsp; We believe that mediation requires a distinct skill set and approach and, through
-                            meticulous preparation for and attendance at countless mediations, the Firm&rsquo;s attorneys have developed time-tested experience and a finely honed approach.</p>
-                        <p>The Firm&rsquo;s experience covers the following areas:</p>
-                        <ul>
-                            <li>Contract disputes</li>
-                            <li>Business torts</li>
-                            <li>Employment and discrimination</li>
-                            <li>Consumer disputes</li>
-                            <li>Health care</li>
-                            <li>Non-compete and non-solicitation agreements</li>
-                        </ul>
-                        <h2>Partners Also Serve as Arbitrators</h2>
-                        <p>Founding partners Alan Lash and Martin Goldberg not only act as advocates for clients in arbitrations, but they are also entrusted by their peers and industry leaders to serve as arbitrators in large, complex arbitration proceedings.
-                            Alan is member of the American Arbitration Association&rsquo;s National Healthcare Dispute Resolution Advisory Council and is the Vice Chair of Educational Programs for the American Health Lawyers Association&rsquo;s Alternative
-                            Dispute Resolution Affinity Group. He has written and lectured extensively about an array of ADR topics and, as an arbitrator for both the AAA and AHLA, has presided over numerous large, complex arbitrations as a panel member,
-                            panel chair or as the sole arbitrator of the dispute.</p>
-                        <p>Marty Goldberg likewise acts as an arbitrator for the American Health Lawyers Association&rsquo;s Alternative Dispute Resolution Service, where he has served as the sole arbitrator or as a member of a panel in a number of cases.
-                            A highly skilled and experienced advocate in arbitration, Marty is also a frequent lecturer regarding a variety of arbitration topics.</p>
+                        {{data.description|safe}}
 
                     </div>
                 </div>
@@ -184,17 +151,17 @@
                         <div class="row practice-areas">
                             <div class="col" style="margin-top: 1rem;">
                                 <ul>
+                                    
+                                    {% for areas in practice_area %}
                                     <li>
-                                        <a href="{% url 'inside_practice' %}"
-                                        class="d-flex align-items-center justify-content-center">
-                                        <span>Appellate Advocacya asdascz asddasdasxc asdaweadsac asdzcx</span>
+                                        <a href="{{areas.get_absolute_url}}">
+                                            <span>{{areas.title}}</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="{% url 'inside_practice' %}" class="d-flex align-items-center justify-content-center">
-                                            <span>Appellate Advocacya asdascz asddasdasxc asdaweadsac asdzcx</span>
-                                        </a>
-                                    </li>
+                                    {% endfor %}
+                                        
+                                    
+                                    
                                 </ul>
                             </div>
                         </div>
