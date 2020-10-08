@@ -6,7 +6,8 @@ body {
     background: #000000;
     -webkit-text-size-adjust: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -44,6 +45,7 @@ a:hover,
 a:focus {
     color: #4d7fb6;
     text-decoration: underline;
+    outline: none;
 }
 
 .container-fluid {
@@ -88,8 +90,6 @@ nav {
     color: #234c85;
 }
 
-
-
 .navbar-light .navbar-nav .nav-link {
     color: #00397b;
     border: none;
@@ -104,30 +104,30 @@ nav {
 
 .navbar-light .navbar-nav .nav-link:after {
     opacity: 0;
-	content: "";
-	height: 2px;
-	width: 100%;
-	background: #8baac9;
-	top: 100%;
-	left: 0;
-	display: block;
-	-webkit-transition: all 300ms ease-out;
-	-moz-transition: all 300ms ease-out;
-	-ms-transition: all 300ms ease-out;
-	-o-transition: all 300ms ease-out;
-	transition: all 300ms ease-out;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #8baac9;
+    top: 100%;
+    left: 0;
+    display: block;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
 }
-
 
 .navbar-nav .nav-item:hover .nav-link {
     color: #9bb4cd;
 }
-.navbar-light .navbar-nav .nav-link:hover:after{
+
+.navbar-light .navbar-nav .nav-link:hover:after {
     /*color: #9bb4cd;*/
     width: 100%;
     left: 0;
     transform: translateY(-10px);
-	opacity: 1;
+    opacity: 1;
 }
 
 /*Home Page*/
@@ -147,6 +147,7 @@ nav {
     /* adjust 'height' to position overlay content vertically */
     height: 74%;
 }
+
 .banner-image2 .img-overlay {
     position: absolute;
     top: 0;
@@ -577,6 +578,57 @@ a.print:focus {
     margin: 0px;
 }
 
+.blog_pagination {
+    background: none;
+    margin-top: 5rem;
+}
+
+.blog_pagination ul li {
+    list-style-type: none !important;
+    text-align: center;
+}
+
+.pagination > li > a
+{
+    color: #8ca8c9;
+    font-size: 18px;
+    margin: 0 -2px;
+    background: none;
+    
+    line-height: 32px;
+    padding: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-shadow: none;
+    min-width: 32px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    background: #00397B;
+    color: #fff;
+    text-decoration: none;
+    border: solid 1px #00397B;
+    box-shadow: none;
+}
+.pagination > .active > a
+{
+    color: white;
+    background-color:  #8ca8c9 !Important;
+    border: solid 1px  #8ca8c9 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #00397B !Important;
+    border: solid 1px #00397B;
+}
+
 /*Inside Practice areas********************************************************/
 
 .practice-areas ul li {
@@ -842,13 +894,13 @@ a.button.light:hover,
     margin: 0;
     list-style: none;
     padding: 0 0 6px 20px;
-    /* Fix for text on second line */
+    /* Fix for text on second line
+*/
     text-indent: -11px;
     margin-left: 23px;
 }
 
-/* Footer
-------------------------------------------------------------------------------*/
+/* Footer ------------------------------------------------------------------------------*/
 
 #footer {
     clear: both;
